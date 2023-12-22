@@ -1,0 +1,327 @@
+* {  
+  padding: 0;
+  margin: 0;
+
+  /* box-sizing: border-box; */
+  
+  outline: none !important;
+}
+
+body {
+
+  /* margin: 0; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.StockSearchList {
+  margin: 1.2vh 2vh;
+  border: 1px solid black;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.actionButtons {
+  background-color: unset;
+  border: unset;
+}
+
+
+#contentHolder {
+  height: 87.2vh;
+  /* border: 1px dotted black; */
+  overflow: hidden auto;
+}
+
+#contentNavbar {
+  height: 12.3vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contentNavbar > button {
+  padding: 0.8vh 0;
+  width: 48vw;
+  background-color: unset;
+  border: unset;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.active {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+
+#contentNavbar > button > * {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.stockHolder {
+  border: 1px solid;
+  margin: 1vh;
+  padding: 1vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .stockHolder:hover {
+  background-color: red;
+}
+
+.stockHolder:active {
+  background-color: blue;
+} */
+
+.hide {
+  display: none;
+}
+    
+.stockHolder:hover > .hide {
+  display: block;
+}
+
+.stockHolder > * {
+  margin-bottom: 0 !important;
+}
+
+.nav-item > * {
+  background-color: unset;
+  border: none;
+  width: 100%;
+  color: #000 !important;
+
+}
+
+.nav-item {
+  text-align: center !important;
+}
+
+/* Login and Registration component */
+form{
+  width: 55%;
+  height: fit-content;
+  text-align: center;
+}
+
+form input{
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  form{
+    width: 82%;
+  }
+}
+
+.formHolder {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-top: 6vh;
+  flex-flow: column;
+}
+
+.formHolder > p{
+  margin-top: 1vh;
+}
+/* end login */
+
+
+/* search.js */
+#search {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 2.5vh;
+  min-width: 50%;
+  padding: 0.5vh 0;
+  border-radius: 16px;
+}
+
+input[type="text"], input[type="password"] {
+  border-color: #007bff;
+}
+
+
+
+#search:focus {
+  box-shadow: 0 0 4px #60adff;
+}
+
+.searchStockNameSection {
+  max-width: 80%;
+}
+
+.searchStockNameSection > * {
+  padding: 0;
+  margin: 0;
+}
+
+#seachComponent h5 {
+  text-align: center;
+}
+
+#seachComponent > section {
+  position: relative;
+  min-height: 60vh;
+
+}
+
+
+.searchIconForUI {
+  position: absolute;
+  top: 2vh;
+  height: 9vh;
+  width: 9vh;
+}
+
+#searchUILeft {
+  left: 3vw;
+}
+
+#searchUIRight {
+  right: 3vw;
+}
+/* end search.js */
+
+/* dashboard */
+
+.dropdown-menu {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 12px;
+  font-size: 0.93em;
+}
+
+#optionsBtn {
+  background-color: #007bff;
+  color: white;
+  font-size: 0.8em !important;
+  padding: 0 1.6vh !important;
+}
+
+ul {
+  border-color: #007bff !important;
+}
+
+ul * {
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+
+nav {
+  background: #007bff !important;
+  color: white;
+  margin-bottom: 2vh;
+}
+
+.dashboardIconForUI {
+  height: 1.7em;
+  width: 1.7em;
+}
+/* end */
+
+/* dashboard navbar */
+
+.navbar {
+  padding-left: 2vw;
+  padding-right: 3.5vw;  
+}
+
+.navbar > h4 > span {
+  font-size: 1.5em;
+  font-weight: 120%;
+}
+
+
+.navbar > button {
+  border: 1px solid white !important;
+}
+
+.navbar > button:hover {
+  
+  box-shadow: unset;
+  /* box-shadow: white 0px 4px 4px -1px, white 0px 1px 1px -1px; */
+  outline: unset;
+}
+
+.navbar > button:focus {
+  box-shadow: unset !important;
+  outline: unset;
+}
+
+
+.nav-link {
+  padding: 1.5vh !important;
+  margin: 0;
+  color: white !important;
+}
+
+.show {
+  margin-top: 2vh !important;
+}
+
+.show .nav-item {
+  border-top: 1px dashed white;
+}
+
+
+
+
+/* end dashboard navbar */
+
+
+/* for sorting buttons */
+
+.isActive {
+  background-color: #007bff;
+  color: white;
+}
+
+/* end */
+
+
+
+/* viewStock */
+#backURL {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5vh;
+  border: 1px solid;
+  margin: 2vh 0 0 2vw;
+  background: #007bff;
+  color: white;
+}
+
+
+.buttonOnStock {
+  padding: 0.5vh 1vw;
+  background: #007bff;
+  color: white;
+}
